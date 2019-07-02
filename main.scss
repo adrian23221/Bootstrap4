@@ -1,0 +1,65 @@
+$theme-colors: (
+    "primary": #166ba7,
+    "secondary": #01bbd9,
+    "backgroundcolor": #00347a,
+    "footer": #222222
+);
+
+$grid-columns: 24;
+
+$container-max-widths: (
+    sm: 400px,
+    md: 600px,
+    lg: 768px,
+    xl: 1170px
+);
+
+/* Slide right Menu */
+
+.sidenav {
+    height: auto;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: black;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#navbarTogglerDemo03 {
+    justify-content: flex-end;
+}
+
+body > div {
+    flex-direction: column;
+}
+
+a {
+    color: white;
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
